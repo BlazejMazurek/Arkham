@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <title> Mazurek 1P</title>
+ <script language="JavaScript">
+ function WinOpen_mazurek1() 
+ {
+window.open("obraz1.html","okienko","toolbar=yes,directories=yes,menubar=yes,height=450,width=300,top=400,left=400");
+ }
+ function WinOpen_mazurek2() 
+ {
+window.open("obraz2.html","okienko","toolbar=yes,directories=yes,menubar=yes,height=450,width=300,top=400,left=600");
+ }
+ function WinOpen_mazurek3() 
+ {
+window.open("obraz3.html","okienko","toolbar=yes,directories=yes,menubar=yes,height=450,width=300,top=400,left=800");
+ }
+ function WinOpen_mazurek4() 
+ {
+window.open("obraz4.html","okienko","toolbar=yes,directories=yes,menubar=yes,height=450,width=300,top=400,left=1000");
+ }
+ function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+    <p align="center"><font color="red" size="7"><b>Wykonał: Błażej Mazurek mój numer w dzienniku to 13,<br>
+        czyli mam układ [(13) mod 4 = 1] układ 1
+    </b></font></p>
+    <br><br>
+ <form>
+    <p align="center">
+ <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_mazurek1(' ')">
+ <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_mazurek2(' ')">
+ <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_mazurek3(' ')">
+ <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_mazurek4(' ')">
+ <br><br><br>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</p>
+ </form>
+</body>
+</html>
