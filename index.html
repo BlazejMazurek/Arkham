@@ -3,7 +3,15 @@
  <title> Mazurek Błażej 1P</title>
 
  <script language="JavaScript">
- function WinOpen_z3() 
+ function WinOpen_z1() 
+ {
+window.open("zad1_mazu.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+  function WinOpen_z2() 
+ {
+window.open("zad2_mazu.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+  function WinOpen_z3() 
  {
 window.open("zad3_mazu.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
  }
@@ -24,6 +32,8 @@ function okno_zamknij()
 <body>
     <font color="red" size="6"><b>Szkielet zaliczeniowy JavaScript Błażej Mazurek 2P</b></font>
  <form>
+  <input type="button_z1" name="zadanie1" value="zad1_mazu" onclick="WinOpen_z1(' ')">
+  <input type="button_z2" name="zadanie2" value="zad2_mazu" onclick="WinOpen_z2(' ')">
  <input type="button_z3" name="zadanie3" value="zad3_mazu" onclick="WinOpen_z3(' ')">
  <input type="button_z4" name="zadanie4" value="zad4_mazu" onclick="WinOpen_z4(' ')">
  <input type="button_z5" name="zadanie5" value="zad5_mazu" onclick="WinOpen_z5(' ')">
