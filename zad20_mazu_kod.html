@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Mazurek 2P</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+    <h1>Kod HTML</h1>
+    <textarea rows="54" cols="98">
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+    function dab()
+ {
+var ax= parseFloat(document.getElementById('ax').value);
+var ay= parseFloat(document.getElementById('ay').value);
+var bx= parseFloat(document.getElementById('bx').value);
+var by= parseFloat(document.getElementById('by').value);
+var dab=Math.sqrt(Math.pow((ax-bx),2) + Math.pow((ay-by),2));
+ 
+ document.getElementById("nazwa").innerHTML ="Długość odcinka AB wynosi "+dab.toFixed(2)+" cm"; 
+ } 
+ function dbc()
+ {
+var cx= parseFloat(document.getElementById('cx').value);
+var cy= parseFloat(document.getElementById('cy').value);
+var bx= parseFloat(document.getElementById('bx').value);
+var by= parseFloat(document.getElementById('by').value);
+var dbc=Math.sqrt(Math.pow((bx-cx),2) + Math.pow((by-cy),2));
+ 
+ document.getElementById("nazwa").innerHTML ="Długość odcinka CB wynosi "+dbc.toFixed(2)+" cm"; 
+ } 
+ function dac()
+ {
+var ax= parseFloat(document.getElementById('ax').value);
+var ay= parseFloat(document.getElementById('ay').value);
+var cx= parseFloat(document.getElementById('cx').value);
+var cy= parseFloat(document.getElementById('cy').value);
+var dac=Math.sqrt(Math.pow((ax-cx),2) + Math.pow((ay-cy),2));
+
+ document.getElementById("nazwa").innerHTML ="Długość odcinka AC wynosi "+dac.toFixed(2)+" cm"; 
+ } 
+ </script>
+ <h1> Długość boków trójkąta </h1>
+ Podaj odcinek Ax <input type="text" id="ax" placeholder="0"> cm<br><br><br>
+ Podaj odcinek Ay <input type="text" id="ay" placeholder="0"> cm<br><br><br>
+ Podaj odcinek Bx <input type="text" id="bx" placeholder="0"> cm<br><br><br>
+ Podaj odcinek By <input type="text" id="by" placeholder="0"> cm<br><br><br>
+ Podaj odcinek Cx <input type="text" id="cx" placeholder="0"> cm<br><br><br>
+ Podaj odcinek Cy <input type="text" id="cy" placeholder="0"> cm<br><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa">
+ <input type="button" name="Dab" value="Oblicz długość AB" Onclick="dab()"><br><br>
+ <input type="button" name="Dbc" value="Oblicz długość BC" Onclick="dbc()"><br><br>
+ <input type="button" name="Dac" value="Oblicz długość AC" Onclick="dac()"><br><br>
+</div>
+</body>
+</html>
+    </textarea>
+</body>
+</html

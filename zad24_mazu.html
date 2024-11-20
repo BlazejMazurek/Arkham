@@ -1,0 +1,24 @@
+<html> 
+<head> 
+<title>
+Obliczenia z użyciem Math
+</title>
+</head>
+<body>
+    <div style="color:darkblue;font-size:43px;">
+ <script language="JavaScript">
+    var x1_maz=parseFloat(prompt("x1=",""));
+ var x2_maz=parseFloat(prompt("x2=",""));
+ document.write("x1="+x1_maz+" &nbsp &nbsp &nbsp &nbsp &nbsp x2="+x2_maz+" <br>");
+    var y1 = 3*(x1_maz*(6/8));
+    var y2 = 2 * Math.cos(x1_maz) + 3 * Math.sin(x1_maz);
+    var y3 = Math.sqrt(Math.pow(x1_maz, 5)+2*Math.pow(x2_maz, 4) * Math.abs(x1_maz-x2_maz),3);
+    var rad=(x1_maz*Math.PI)/180;
+    document.write("x1="+x1_maz.toFixed(2)+" &nbsp &nbsp &nbsp &nbsp &nbsp x1="+rad.toFixed(2)+" <br>");
+    document.write("y1="+y1.toFixed(2)+"<br>"); 
+    document.write("y2="+y2.toFixed(2)+"<br>");
+    document.write("y3="+y3.toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>

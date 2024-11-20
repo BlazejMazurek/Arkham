@@ -1,0 +1,37 @@
+<html> 
+<head> 
+<title>
+Drabina
+</title>
+ <script language="JavaScript">
+    function Drabina_maz(x,d) {
+        x_maz=parseFloat(x)
+        d_maz=parseFloat(d)
+     drabina_maz = Math.sqrt((x_maz*x_maz)+(d_maz*d_maz));
+    document.getElementsByName('drabina')[0].value=drabina_maz.toFixed(2);
+    }
+    function Alfa_maz(x,d) {
+        x_maz=parseFloat(x)
+        d_maz=parseFloat(d)
+        alfa_maz = Math.atan(x_maz/d_maz)*(180/Math.PI);
+        document.getElementsByName('alfa')[0].value=alfa_maz.toFixed(2);
+    }
+</script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="Drabina_maz(this.x_maz.value,this.d_maz.value); 
+Alfa_maz(this.x_maz.value,this.d_maz.value);return false"> 
+ Podaj x=
+ <input size="6" name="x_maz">
+ Podaj d=
+ <input size="6" name="d_maz">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" onclick="Drabina_maz">
+ <br> <br>
+ Drabina=
+ <input size="6" name="drabina" onclick="Alfa_maz">
+ Alfa=
+ <input size="6" name="alfa" >
+</form>
+</body>
+</html>
