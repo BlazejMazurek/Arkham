@@ -1,0 +1,37 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var czlowiek = {
+nazwisko: 'Mazurek',
+imie: 'Błażej',
+zawod: 'programista',
+pokaz: function ()
+{
+ document.write(this.nazwisko + ' ' + this.imie+"<br>")
+ }
+}
+czlowiek.pokaz();
+
+var spodnie={
+    Rodzaj: 'Dresy',
+    kolor:'czarny',
+    marka: 'Adidas',
+    spodnie_wyswietl_mazurek:function(){
+        document.write(this.Rodzaj + ' ' + this.kolor+' '+this.marka)
+    }
+}
+spodnie.spodnie_wyswietl_mazurek();
+
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to  spodnie<br>
+ Pola:<br>
+ Rodzaj<br>
+ kolor<br>
+ marka<br>
+ metoda: pokaz<br>
+</body>
+</html>

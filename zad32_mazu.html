@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <script type="text/javascript">
+    function spodnie(Rodzaj, kolor, marka, ile_kieszeni) {
+        this.Rodzaj = Rodzaj;
+        this.kolor = kolor;
+        this.marka = marka;
+        this.ile_kieszeni = ile_kieszeni;
+    }
+
+    spodnie.prototype.wypisz = function() {
+        alert(this.Rodzaj + ' ' + this.kolor + ' ' + this.marka + ' ' + this.ile_kieszeni);
+    };
+
+    var spodnie1 = new spodnie("Dresy", "Czarny", "Adidas", "2");
+    var spodnie2 = new spodnie("Dżinsy", "Granatowy", "Kubenz", "4");
+    var spodnie3 = new spodnie("Cargo", "Beżowy", "Cropp", "8");
+    var spodnie4 = new spodnie("Shorty", "Szare", "Nike", "2");
+
+    spodnie1.wypisz();
+    spodnie2.wypisz();
+    spodnie3.wypisz();
+    spodnie4.wypisz();
+
+    document.write("dostęp do właściwości" + "<br>");
+
+    document.write("pierwsze spodnie " + " " + spodnie1.Rodzaj + " " + spodnie1.kolor + " " + spodnie1.marka + " " + spodnie1.ile_kieszeni + "<br><br>");
+
+    document.write("dostęp do właściwości" + "<br>");
+
+    document.write("drugie spodnie" + " " + spodnie2.Rodzaj + " " + spodnie2.kolor + " " + spodnie2.marka + " " + spodnie2.ile_kieszeni + "<br><br>");
+
+    document.write("dostęp do właściwości" + "<br>");
+
+    document.write("trzecie spodnie" + " " + spodnie3.Rodzaj + " " + spodnie3.kolor + " " + spodnie3.marka + " " + spodnie3.ile_kieszeni + "<br><br>");
+
+    document.write("dostęp do właściwości" + "<br>");
+
+    document.write("czwarte spodnie" + " " + spodnie4.Rodzaj + " " + spodnie4.kolor + " " + spodnie4.marka + " " + spodnie4.ile_kieszeni + "<br><br>");
+    </script>
+    </head>
+    <body>
+    <br>
+    programowanie obiektowe
+    </body>
+</html>

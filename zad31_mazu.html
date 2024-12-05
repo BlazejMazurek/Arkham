@@ -1,0 +1,49 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var czlowiek = {
+nazwisko: 'Mazurek',
+imie: 'Błażej',
+zawod: 'programista',
+pokaz: function ()
+{
+ document.write(this.nazwisko + ' ' + this.imie+"<br>")
+ }
+}
+czlowiek.pokaz();
+
+var spodnie={
+    Rodzaj: 'Dresy',
+    kolor:'czarny',
+    marka: 'Adidas',
+    spodnie_wyswietl_mazurek:function(){
+        document.write(this.Rodzaj + ' ' + this.kolor+' '+this.marka)
+    }
+}
+spodnie.spodnie_wyswietl_mazurek();
+spodnie.liczba_kieszeni=2;
+spodnie.spodnie_wyswietl_mazurek=function() {alert('Liczba kieszeni: ' + this.liczba_kieszeni)}
+spodnie.spodnie_wyswietl_mazurek();
+       
+        </script>
+        </head>
+       <body>
+       <br>
+       Programowanie obiektowe. <br>
+       Obiekt to człowiek<br>
+       Pola:<br>
+       Nazwisko<br>
+       imie<br>
+       zawod<br>
+       metoda: pokaz<br>
+       nowe pole to liczba kieszeni <br>
+       nowa metoda to wypisz();<br>
+       </body>
+       </html>       
+
+
+
+
+
+
+
