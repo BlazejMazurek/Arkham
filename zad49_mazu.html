@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Silnia</title>
+  <script language="JavaScript">
+    function silnia(x) {
+
+      var x_maz = parseFloat(x);
+
+      var silnia_maz = 1;
+      if (x === 0) {
+        silnia_maz = 1;
+      } else {
+        for (var i_m = 1; i_m <= x; i_m++) {
+          silnia_maz *= i_m;
+        }
+      }
+
+      document.getElementById("nazwa").innerHTML = "Silnia się równa = " + silnia_maz;
+    }
+  </script>
+</head>
+<body>
+  <h1>Obliczanie silni</h1>
+  <form name="formularz" action="..." onsubmit="silnia(this.x.value); return false;">
+    Podaj Liczbę: <input size="6" name="x" type="text">
+    <input type="submit" value="Oblicz">
+  </form>
+  <div style="color: green; font-size: 2cm;" id="nazwa"></div>
+</body>
+</html>

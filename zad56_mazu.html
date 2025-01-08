@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+ <head> 
+   <title>Użycie funkcji</title> 
+   <meta charset="utf-8"> 
+ </head> 
+<body>
+  <h1>Obliczanie liczb pierwszych ze wzoru</h1>
+  <script>
+    function czyPierwsza(liczba_maz) {
+      if (liczba_maz < 2) return false;
+      for (let k = 2; k <= Math.sqrt(liczba_maz); k++) 
+        if (liczba_maz % k === 0) return false;
+      return true;
+    }
+
+    function Pierwsza() {
+      var linie_maz = 0;
+      var x_maz = 0;
+
+      for (var i = x_maz; i <= 39; i++) {
+        var w_maz = Math.pow(i, 2) + i + 41;
+        if (czyPierwsza(w_maz)) {
+          document.write("i = " + i + " &nbsp; w(" + i + ") = " + w_maz + "<br>");
+          linie_maz++;
+
+          if (linie_maz % 5 === 0) {
+            break;
+          }
+        }
+      }
+    }
+    Pierwsza();
+  </script>
+</body>
+</html>

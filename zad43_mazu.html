@@ -1,0 +1,16 @@
+<html>
+<body>
+ <script language="JavaScript">
+function parzyste(x){
+x_maz = parseFloat(x);
+ for(i_m=2;i_m<=x;i_m+=2)
+ {
+ document.write(+i_m+"<br>");
+ }
+}
+ </script>
+</div>
+</body>
+<form name="formularz" action="..." onsubmit="parzyste(this.x.value); return false">
+Podaj x: <input size="6" name="x">
+</form>
