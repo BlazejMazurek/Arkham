@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+ <head>    
+    <title>zadanie 47</title>    
+    <meta charset="utf-8">   
+ </head>  
+ <body> 
+    <div style="color:red;font-size:50px;"> 
+      <script language="JavaScript">
+       do{
+         do{
+            var liczba1 = prompt("Bok a = ","");
+            var a_maz = parseFloat(liczba1);
+         }while(a_maz <= 0);
+         do{
+            var liczba2 = prompt("Bok b = ","");
+            var b_maz = parseFloat(liczba2);
+         }while(b_maz <= 0);
+         do{
+            var liczba3 = prompt("Bok c = ","");
+            var c_maz = parseFloat(liczba3);
+         }while(c_maz <= 0);
+       }while(a_maz + b_maz < c_maz || c_maz + a_maz < b_maz || b_maz + c_maz < a_maz);
+        document.write("Bok a ="+ a_maz +"<br>Bok b ="+ b_maz +"<br>Bok c ="+ c_maz + "<br>");
+      </script>
+    </div>
+ </body>
+</html>
